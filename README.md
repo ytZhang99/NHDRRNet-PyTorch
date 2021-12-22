@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # NHDRRNet-PyTorch
 - This is the PyTorch implementation of [Deep HDR Imaging via A Non-Local Network](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8989959) (TIP 2020).
 

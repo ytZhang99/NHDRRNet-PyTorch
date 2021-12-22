@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from train import Trainer
 from option import args
 

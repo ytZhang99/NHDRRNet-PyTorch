@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import argparse
 
 parser = argparse.ArgumentParser(description='NHDRRNet')

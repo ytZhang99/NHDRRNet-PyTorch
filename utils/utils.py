@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import numpy as np
 import os, glob
 import cv2

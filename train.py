@@ -78,8 +78,8 @@ class Trainer(object):
                 start_time = time.time()
 
                 pred = self.model(batch_ldr0, batch_ldr1, batch_ldr2)
-                pred = torch.clamp(pred, 0., 1.)
                 pred = range_compressor_tensor(pred)
+                pred = torch.clamp(pred, 0., 1.)
                 
                 self.optimizer.zero_grad()
                 loss = self.criterion(pred, label)

@@ -73,6 +73,8 @@ class Trainer(object):
                 batch_ldr0, batch_ldr1, batch_ldr2 = batch_data['input0'].cuda(), batch_data['input1'].cuda(), \
                                                      batch_data['input2'].cuda()
                 label = batch_data['label'].cuda()
+                label = range_compressor_tensor(label)
+                label = torch.clamp(label, 0., 1.)
 
                 torch.cuda.synchronize()
                 start_time = time.time()
